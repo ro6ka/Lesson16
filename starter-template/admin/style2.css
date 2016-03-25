@@ -24,10 +24,11 @@
 
 .green2 a{
 	text-decoration:none;
-	color:white;
+	color:grey;
 }
 
 .green2:hover{
 transition:3s ease-out;
 opacity:0.5;
+color:white;
 }
