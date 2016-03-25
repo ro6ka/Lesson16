@@ -1,18 +1,9 @@
-<?php 
+<?php
 include ("../model.php");
 $connect = new Connect("localhost", "root", "", "Lesson15");
 
-if (isset($_POST['action'])) {
-  $title=$_POST['title'];
-  $desc=$_POST['description'];
-  $status=$_POST['group1'];
-  $date=$_POST['date'];
-  $text=$_POST['text'];
-  $img=$_FILES['file']['name'];
-  $addnews= new AddNews($connect->connect,$title,$img,$img,$desc,$text,$status,$date);
-}
 
- ?>
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -82,48 +73,8 @@ if (isset($_POST['action'])) {
   </div>
 </div>
     <div class="col s10">
-      <form  method="POST" enctype="multipart/form-data">
-        <div class="row">
-          <div class="input-field col s6">
-            <input name="title" id="first_name" type="text" class="validate">
-            <label for="first_name">News title</label>
-          </div>
-          <div class="input-field col s6">
-            <input name="description" id="last_name" type="text" class="validate">
-            <label for="last_name">News Description</label>
-          </div>
-        </div>
-        <div class="input-field col s3">
-          <input name="date" type="date" class="datepicker">
-        </div>
-        <p>
-          <input name="group1" type="radio" id="test1" value="1" />
-          <label for="test1">Visible</label>
-        </p>
-        <p>
-          <input name="group1" type="radio" id="test2" value="0" />
-          <label for="test2">Not Visible</label>
-        </p>
-        <div class="row">
-          <div class="input-field col s12">
-            <textarea name="text" id="textarea1" class="materialize-textarea"></textarea>
-            <label for="textarea1">Textarea</label>
-          </div>
-        </div>
-        <div class="file-field input-field">
-          <div class="btn">
-            <span>File</span>
-            <input name="file" type="file">
-          </div>
-          <div class="file-path-wrapper">
-            <input class="file-path validate" type="text">
-          </div>
-        </div>
-        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-        <i class="material-icons right">send</i>
-        </button>
-      </form>
-      </div>
+      
+    </div>
     </div>
   </div>
   
