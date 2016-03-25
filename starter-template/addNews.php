@@ -1,6 +1,6 @@
-<?php 
+  <?php 
 include ("model.php");
-$connect = new Connect("localhost", "root", "", "Lesson15");
+$connect = new Connect("localhost", "root", "", "lesson15");
 
 if (isset($_POST['action'])) {
   $title=$_POST['title'];
@@ -31,7 +31,7 @@ if (isset($_POST['action'])) {
       <ul class="right hide-on-med-and-down">
         <li><a href="index.php">HOME</a></li>
         <li><a href="#">ABOUT</a></li>
-        <li><a href="#">CONTACTS</a></li>
+        <li><a href="newsList.php">NEWS LIST</a></li>
         <li><a href="login.php">LOG IN</a></li>
         <li><a href="register.php">REGISTER  </a></li>
       </ul>
@@ -42,13 +42,10 @@ if (isset($_POST['action'])) {
     </div>
   </nav>
   <!-- <div class="container"> -->
-  <div class="section">
+<div class="section">
     <!--   Icon Section   -->
-    <div class="col s3">
-      
-    </div>
     <div class="row">
-      <form class="col s9" method="POST" enctype="multipart/form-data">
+      <form class="col s12" method="POST" enctype="multipart/form-data">
         <div class="row">
           <div class="input-field col s6">
             <input name="title" id="first_name" type="text" class="validate">
@@ -89,8 +86,12 @@ if (isset($_POST['action'])) {
         <i class="material-icons right">send</i>
         </button>
       </form>
-    </div>
-  </div>
+      </div>
+</div>
+
+      
+</div>
+</div>
   
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

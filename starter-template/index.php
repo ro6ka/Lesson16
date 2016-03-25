@@ -1,7 +1,7 @@
 <?php 
 
 include ("model.php");
-$connect = new Connect("localhost", "root", "", "Lesson15");
+$connect = new Connect("localhost", "root", "", "lesson15");
 
 $sql= "SELECT * FROM news WHERE news_status=1";
 $query=mysqli_query($connect->connect,$sql);
@@ -37,35 +37,27 @@ $query=mysqli_query($connect->connect,$sql);
     </div>
   </nav>
 
-  <!-- <div class="container"> -->
-    <div class="section">
+<div class="container">
+    <div class="section st-padding">
+        <div class="row">
+            <?php while($row=mysqli_fetch_assoc($query)): ?>
 
-      <!--   Icon Section   -->
-      <div class="row">
-        <?php while($row=mysqli_fetch_assoc($query)): ?>
-
-        <a href="news.php?show=<?php echo $row['id']; ?>" value=" <?php echo $row['id']; ?> ">
-        <div class="col s12 m3">
-          <div class="card">
-            <img src="nikon.jpg">
-            <div class="card-content black-text">
-              <span><h5><?php echo $row["news_title"]; ?></h5></span>
-              <p><?php echo $row["news_desc"]; ?></p>
+            <a href="news.php?show=<?php echo $row['id']; ?>" value=" <?php echo $row['id']; ?> ">
+            <div class="col s12 m3">
+                <div class="card">
+                    <img src="nikon.jpg">
+                    <div class="card-content black-text">
+                        <span><h5><?php echo $row["news_title"]; ?></h5></span>
+                        <p><?php echo $row["news_desc"]; ?></p>
+                    </div>
+                </div>
             </div>
-          </div>
+            </a>
+            
+          <?php endwhile; ?>
         </div>
-        </a>
-      <?php endwhile; ?>
-
-      </div>
-
     </div>
-    <br><br>
-
-    <div class="section">
-
-    </div>
- <!--  </div> -->
+</div>
 
   <footer class="page-footer orange">
     <div class="container">
