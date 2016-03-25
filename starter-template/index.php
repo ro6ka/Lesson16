@@ -1,7 +1,7 @@
 <?php 
 
 include ("model.php");
-$connect = new Connect("localhost", "root", "", "Lesson15");
+$connect = new Connect("localhost", "root", "", "lesson15");
 
 $sql= "SELECT * FROM news WHERE news_status=1";
 $query=mysqli_query($connect->connect,$sql);
