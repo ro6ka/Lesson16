@@ -47,39 +47,25 @@ if (isset($_POST['action'])) {
     <div class="row">
     <div class="col s2 black2">
 
-    <!-- Dropdown Trigger -->
 <div class="leftMenu">
-  <a class='dropdown-button btn' data-beloworigin="true" href='#' data-activates='dropdown1'>News</a>
-
-  <!-- Dropdown Structure -->
-  <ul id='dropdown1' class='dropdown-content'>
-    <li><a href="#!">Add News</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">All News</a></li>
+    <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header green2">Menu</div>
+      <div class="collapsible-body green2 "><a href="#!">Add Menu</a></div>
+      <div class="collapsible-body green2"><a href="#!">Menu Item</a></div>
+    </li>
+    <li>
+      <div class="collapsible-header green2">Pages</div>
+      <div class="collapsible-body green2"><a href="#!">Add Page</a></div>
+      <div class="collapsible-body green2"><a href="#!">All Pages</a></div>
+    </li>
+    <li>
+      <div class="collapsible-header green2">News</div>
+      <div class="collapsible-body green2"><a href="#!">Add News</a></div>
+      <div class="collapsible-body green2"><a href="#!">All News</a></div>
+    </li>
   </ul>
-  </div>
-  <!-- Dropdown Trigger -->
-<div class="leftMenu">
-  <a class='dropdown-button btn' data-beloworigin="true" href='#' data-activates='dropdown2'>Menu</a>
-
-  <!-- Dropdown Structure -->
-  <ul id='dropdown2' class='dropdown-content'>
-    <li><a href="#!">Add Menu</a></li>
-     <li class="divider"></li>
-    <li><a href="#!">Menu Item</a></li>
-  </ul>
-  </div>
-  <!-- Dropdown Trigger -->
-  <div class="leftMenu">
-  <a class='dropdown-button btn' data-beloworigin="true" href='#' data-activates='dropdown3'>Pages</a>
-
-  <!-- Dropdown Structure -->
-  <ul id='dropdown3' class='dropdown-content'>
-    <li><a href="#!">Add Page</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">All Pages</a></li>
-  </ul>
-  </div>
+</div>
 </div>
     <div class="col s10">
       <form  method="POST" enctype="multipart/form-data">
