@@ -1,0 +1,34 @@
+.black2 {
+	
+	width:100%;
+
+
+}
+
+.leftMenu{
+	margin:20px auto;
+	width:100%;
+}
+
+.leftMenu a{
+	width:inherit;
+}
+
+.green2{
+
+	background-color:#26a69a;
+	text-align:center;
+	color:white;
+	text-transform:uppercase;
+}
+
+.green2 a{
+	text-decoration:none;
+	color:grey;
+}
+
+.green2:hover{
+transition:3s ease-out;
+opacity:0.5;
+color:white;
+}
