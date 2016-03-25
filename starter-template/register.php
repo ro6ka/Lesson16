@@ -1,6 +1,6 @@
 <?php 
 include ("model.php");
-$connect = new Connect("localhost", "root", "", "Lesson15");
+$connect = new Connect("localhost", "root", "", "lesson15");
 
 if(isset($_POST['action'])){
   $name=$_POST['name'];

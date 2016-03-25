@@ -1,6 +1,6 @@
-<?php 
+  <?php 
 include ("model.php");
-$connect = new Connect("localhost", "root", "", "Lesson15");
+$connect = new Connect("localhost", "root", "", "lesson15");
 
 if (isset($_POST['action'])) {
   $title=$_POST['title'];
@@ -44,11 +44,8 @@ if (isset($_POST['action'])) {
   <!-- <div class="container"> -->
 <div class="section">
     <!--   Icon Section   -->
-    <div class="col s3">
-      
-    </div>
     <div class="row">
-      <form class="col s9" method="POST" enctype="multipart/form-data">
+      <form class="col s12" method="POST" enctype="multipart/form-data">
         <div class="row">
           <div class="input-field col s6">
             <input name="title" id="first_name" type="text" class="validate">
