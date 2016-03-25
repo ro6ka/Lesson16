@@ -99,7 +99,37 @@ class Login {
 	}
 
 }
+class Addpage 
+{
+	 public $title;
+     public $link; 
+     public $status;
+     public $imagename; 
+     public $text; 
+     public $connect;
+	function __construct($connect,$title,$link,$status,$imagename,$text)
+	{
+		$this->title=$title;
+		$this->link=$link;
+		$this->status=$status;
+		$this->image=$imagename;
+		$this->text=$text;
+		$this->connect=$connect;
+		$this->insert();
 
+	}
+			function insert(){
+		$sql= "INSERT INTO page (page_title,page_link,page_status,page_image,page_text) VALUES ('$this->title','$this->link','$this->status','$this->imagename','$this->text') ";
+
+		$query=mysqli_query($this->connect,$sql);
+
+		if ($query) {
+			echo "sen yaxci oglansan<br>";
+		}else{
+			echo "Get ayna<br>";
+		}
+	}
+}
 
 
  ?>
