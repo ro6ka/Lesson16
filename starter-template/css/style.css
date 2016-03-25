@@ -1,0 +1,17 @@
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.card img {
+	width: 100%;
+}
+.ca-color {
+	background: darkblue;
+}
+
+.ca-title {
+	line-height: 0px !important;
+}
