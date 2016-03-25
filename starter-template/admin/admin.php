@@ -1,5 +1,5 @@
 <?php 
-include ("model.php");
+include ("../model.php");
 $connect = new Connect("localhost", "root", "", "Lesson15");
 
 if (isset($_POST['action'])) {
@@ -22,11 +22,12 @@ if (isset($_POST['action'])) {
     <title>Starter Template - Materialize</title>
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="style2.css">
   </head>
   <body>
-    <nav class="ca-color" role="navigation">
+  <nav class="ca-color" role="navigation">
       <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">oxu.az</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="index.php">HOME</a></li>
@@ -43,12 +44,45 @@ if (isset($_POST['action'])) {
   </nav>
   <!-- <div class="container"> -->
   <div class="section">
-    <!--   Icon Section   -->
-    <div class="col s3">
-      
-    </div>
     <div class="row">
-      <form class="col s9" method="POST" enctype="multipart/form-data">
+    <div class="col s2 black2">
+
+    <!-- Dropdown Trigger -->
+<div class="leftMenu">
+  <a class='dropdown-button btn' data-beloworigin="true" href='#' data-activates='dropdown1'>News</a>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="#!">Add News</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">All News</a></li>
+  </ul>
+  </div>
+  <!-- Dropdown Trigger -->
+<div class="leftMenu">
+  <a class='dropdown-button btn' data-beloworigin="true" href='#' data-activates='dropdown2'>Menu</a>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown2' class='dropdown-content'>
+    <li><a href="#!">Add Menu</a></li>
+     <li class="divider"></li>
+    <li><a href="#!">Menu Item</a></li>
+  </ul>
+  </div>
+  <!-- Dropdown Trigger -->
+  <div class="leftMenu">
+  <a class='dropdown-button btn' data-beloworigin="true" href='#' data-activates='dropdown3'>Pages</a>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown3' class='dropdown-content'>
+    <li><a href="#!">Add Page</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">All Pages</a></li>
+  </ul>
+  </div>
+</div>
+    <div class="col s10">
+      <form  method="POST" enctype="multipart/form-data">
         <div class="row">
           <div class="input-field col s6">
             <input name="title" id="first_name" type="text" class="validate">
@@ -89,12 +123,13 @@ if (isset($_POST['action'])) {
         <i class="material-icons right">send</i>
         </button>
       </form>
+      </div>
     </div>
   </div>
   
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/init.js"></script>
 </body>
 </html>
